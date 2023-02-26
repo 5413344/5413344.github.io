@@ -1,0 +1,200 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>js面试题 | Gridea</title>
+
+<link rel="shortcut icon" href="https://5413344.github.io/favicon.ico?v=1677393440852">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://5413344.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages//dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+    
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Gridea
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1677393440852"
+                action="/search/">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = () => {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    js面试题
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-02-18 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <h2 id="1常见的数据类型">1.常见的数据类型？</h2>
+<h2 id="2常用的数组操作方法有哪些">2.常⽤的数组操作⽅法有哪些？</h2>
+<h2 id="3for-in和for-of的区别">3.for in和for of的区别?</h2>
+<h2 id="4foreach和map的区别">4.forEach和map的区别？</h2>
+<h2 id="5说说你对严格模式的理解">5.说说你对严格模式的理解？</h2>
+<h2 id="6如何实现一个深拷贝">6.如何实现一个深拷贝？</h2>
+<h2 id="7什么是事件委托">7.什么是事件委托？</h2>
+<pre><code>又叫事件代理，原理就是利用了事件冒泡的机制来实现。也就是说把子元素的事件绑定到了父元素的身上。如果子元素阻止了事件冒泡，那么委托也就不成立。
+阻止时间冒泡：event.stopPropagation( )
+addEventListener('click',函数名,true/false)  默认值是false(事件冒泡)，true(事件捕获)
+好处：提高性能，减少事件绑定，也就减少了内存的占用。
+</code></pre>
+<h2 id="8防抖和节流要怎么实现">8.防抖和节流要怎么实现？</h2>
+<h2 id="9说一下原型原型链">9.说一下原型，原型链。</h2>
+<figure data-type="image" tabindex="1"><img src="https://s1.ax1x.com/2023/02/19/pSOuQkq.png" alt="" loading="lazy"></figure>
+<pre><code>原型：每一个js对象(null除外)创建的时候，就会与之关联另一个对象，这个对象就是我们所说的原型。每一个对象都会从原型中‘继承’属性。
+原型链：查找某个属性的查找机制。查找某个属性，先在自己的私有属性中找，如果找不到，就沿着__proto__去他的原型对象(公有属性)上找，直到null，这种查找机制叫原型链。
+prototype：每一个函数都有一个prototype属性，这个属性指向函数的原型对象。
+__proto__：每个对象(null除外)都会有的属性，指向该关联的构造函数。
+constructor：每个原型都有一个constructor属性，指向该关联的构造函数。
+</code></pre>
+<h2 id="10new操作符具体做了什么">10.new操作符具体做了什么？</h2>
+<h2 id="11js如何实现继承">11.js如何实现继承。</h2>
+<h2 id="13js关于this指向的问题">13.js关于this指向的问题？</h2>
+<h2 id="14说说事件冒泡和事件捕获的理解">14.说说事件冒泡和事件捕获的理解?</h2>
+<pre><code>事件冒泡:
+    1)从最内层的元素向外依次传递的顺序, 默认是事件冒泡
+
+事件捕获:
+    1)从外层到内层依次传递的顺序 ,可以通过addEventListener(&quot;click&quot;,fn,true) 监听事件捕获
+
+## 15.
+</code></pre>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://5413344.github.io/post/htmlcss-mian-shi-ti/" class="post-title gt-a-link">
+                    html+css面试题
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">温故而知新</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme <a href="https://github.com/imhanjie/gridea-theme-pure" target="_blank">Pure</a>, Powered by <a
+                href="https://gridea.dev" target="_blank">Gridea</a> | <a href="https://5413344.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+</div>
+
+<script>
+  hljs.highlightAll()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
